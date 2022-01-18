@@ -585,7 +585,7 @@ Config.JobInteractions = {
         }, {
             id = 'checkvehstatus',
             title = 'Check Tune Status',
-            icon = 'info-circle',
+            icon = 'car',
             type = 'client',
             event = 'qb-tunerchip:client:TuneStatus',
             shouldClose = true
@@ -595,6 +595,13 @@ Config.JobInteractions = {
             icon = 'key',
             type = 'client',
             event = 'qb-houses:client:ResetHouse',
+            shouldClose = true
+        }, {
+            id = 'mdt',
+            title = 'Mdt',
+            icon = 'tablet-alt',
+            type = 'server',
+            event = 'mdt:hotKeyOpen',
             shouldClose = true
         }, {
             id = 'takedriverlicense',
