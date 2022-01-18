@@ -454,7 +454,7 @@ Config.MenuItems = {
             }
         }
     },
-    [5] = {
+    [4] = {
         id = 'blips',
         title = 'Blips',
         icon = 'map-marker',
@@ -484,7 +484,7 @@ Config.MenuItems = {
             }
         }
     },
-    [6] = {
+    [5] = {
         id = 'stealplayer',
         title = 'Steal',
         icon = 'shopping-bag',

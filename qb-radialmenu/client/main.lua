@@ -29,15 +29,15 @@ end)
 function setupSubItems()
     if PlayerData.metadata["isdead"] then
         if PlayerData.job.name == "police" or PlayerData.job.name == "ambulance" then
-            if not Config.MenuItems[4] then
-                Config.MenuItems[4] = {
+            if not Config.MenuItems[6] then
+                Config.MenuItems[6] = {
                     id = 'jobinteractions',
                     title = 'Work',
                     icon = 'briefcase',
                     items = {}
                 }
             end
-            Config.MenuItems[4].items = {
+            Config.MenuItems[6].items = {
                 [1] = {
                     id = 'emergencybutton2',
                     title = Lang:t("options.emergency_button"),
@@ -49,32 +49,32 @@ function setupSubItems()
             }
         else
             if Config.JobInteractions[PlayerData.job.name] and next(Config.JobInteractions[PlayerData.job.name]) then
-                if not Config.MenuItems[4] then
-                    Config.MenuItems[4] = {
+                if not Config.MenuItems[6] then
+                    Config.MenuItems[6] = {
                         id = 'jobinteractions',
                         title = 'Work',
                         icon = 'briefcase',
                         items = {}
                     }
                 end
-                Config.MenuItems[4].items = Config.JobInteractions[PlayerData.job.name]
+                Config.MenuItems[6].items = Config.JobInteractions[PlayerData.job.name]
             else
-                Config.MenuItems[4] = nil
+                Config.MenuItems[6] = nil
             end
         end
     else
         if Config.JobInteractions[PlayerData.job.name] and next(Config.JobInteractions[PlayerData.job.name]) then
-            if not Config.MenuItems[4] then
-                Config.MenuItems[4] = {
+            if not Config.MenuItems[6] then
+                Config.MenuItems[6] = {
                     id = 'jobinteractions',
                     title = 'Work',
                     icon = 'briefcase',
                     items = {}
                 }
             end
-            Config.MenuItems[4].items = Config.JobInteractions[PlayerData.job.name]
+            Config.MenuItems[6].items = Config.JobInteractions[PlayerData.job.name]
         else
-            Config.MenuItems[4] = nil
+            Config.MenuItems[6] = nil
         end
     end
 
