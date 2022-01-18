@@ -1,7 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
 
-edited 'kevin'
 description 'QB-RadialMenu'
 version '1.0.0'
 
